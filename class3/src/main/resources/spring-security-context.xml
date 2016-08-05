@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:sec="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                                 http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.1.xsd">
+
+
+    <sec:http auto-config="true">
+        <sec:intercept-url pattern="/preauth/**" access="permitAll"/>
+        <sec:intercept-url pattern="/**" access="hasRole('ROLE_ADMIN')"/>
+    </sec:http>
+
+    <sec:authentication-manager alias="default-auth-manager">
+        <sec:authentication-provider>
+            <sec:user-service>
+                <sec:user name="admin" authorities="ROLE_ADMIN" password="password"/>
+            </sec:user-service>
+        </sec:authentication-provider>
+    </sec:authentication-manager>
+
+
+</beans:beans>
