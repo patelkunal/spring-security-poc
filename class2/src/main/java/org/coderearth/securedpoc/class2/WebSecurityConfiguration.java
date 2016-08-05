@@ -1,4 +1,4 @@
-package com.symantec.ri.class2;
+package org.coderearth.securedpoc.class2;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

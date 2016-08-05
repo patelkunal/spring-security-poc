@@ -1,4 +1,4 @@
-package com.symantec.ri.class1;
+package org.coderearth.securedpoc.class1;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

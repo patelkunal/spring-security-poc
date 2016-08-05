@@ -1,4 +1,4 @@
-package com.symantec.ri.class1;
+package org.coderearth.securedpoc.class1;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
