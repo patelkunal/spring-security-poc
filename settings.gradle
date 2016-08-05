@@ -1,0 +1,4 @@
+rootProject.name = 'spring-security-poc'
+include 'class0', 'class1'
+include 'class2'
+
