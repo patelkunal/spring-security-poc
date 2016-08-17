@@ -11,6 +11,7 @@ import java.util.HashMap;
  * Created by kunal_patel on 8/4/16.
  */
 @RestController
+@RequestMapping("/secapp/v1")
 public class AccountsController {
 
     @RequestMapping(value = "/rest/accounts", method = RequestMethod.GET)
